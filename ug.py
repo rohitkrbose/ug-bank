@@ -144,7 +144,7 @@ df = pd.read_csv('bank-edited.csv')
 # RF() 
 
 # Visualize plots
-# visualize()
+visualize()
 
 # Run one-by-one to get details about each feature
 campaignStuff()
