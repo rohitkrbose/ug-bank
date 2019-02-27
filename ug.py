@@ -62,6 +62,7 @@ def myHist (col_name, b):
 	bad_hist = bad.hist(bins=b, grid=False, color='red'); plt.title('No',loc='right', color='red'); plt.xlabel(col_name); plt.ylabel('count') 
 	plt.show();
 	
+# Uncomment and run one-by-one
 def visualize ():
 	# myBarPlot('education') # illiterate (4) has very less good... but no use, only one illiterate
 	# myBarPlot('job') # blue collar ratio very less, student ratio quite high
@@ -131,17 +132,22 @@ def RF ():
 		print (col_names[i], clf.feature_importances_[i])
 
 
+# Meant for first time running, to clean data
+
 # df = pd.read_csv('./bank-additional-full.csv', sep=';')
 # cleanData()
 # df.to_csv('bank-edited.csv', index=None, header=True)
 
 df = pd.read_csv('bank-edited.csv')
 
+# Get feature importances
+# RF() 
+
+# Visualize plots
 # visualize()
 
+# Run one-by-one to get details about each feature
 campaignStuff()
 # euribor3mStuff()
 # pdaysStuff()
 # jobStuff()
-
-# RF()
